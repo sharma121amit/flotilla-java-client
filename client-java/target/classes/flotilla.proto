@@ -6,15 +6,10 @@ package flotilla;
 option java_package = "app.flotilla";
 option java_multiple_files = true;
 
-// simple greeter service
-service Greeter {
-  rpc SayHello(HelloRequest) returns (HelloReply) {}
+service EdgeService {
+  rpc Echo(echoMessage) returns (echoMessage) {}
 }
 
-message HelloRequest {
-  string name = 1;
-}
-
-message HelloReply {
-  string message = 1;
+message echoMessage {
+  string text = 1;
 }

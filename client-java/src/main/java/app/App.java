@@ -5,9 +5,8 @@ import io.grpc.ManagedChannelBuilder;
 import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder;
 
 
-import app.flotilla.GreeterGrpc;
-import app.flotilla.HelloReply;
-import app.flotilla.HelloRequest;
+import app.flotilla.EdgeServiceGrpc;
+import app.flotilla.echoMessage;
 
 public class App {
     public static void main(String[] args) {
@@ -18,13 +17,13 @@ public class App {
             .build();        
 
         try {
-            GreeterGrpc.GreeterBlockingStub stub = GreeterGrpc.newBlockingStub(channel);
+            EdgeServiceGrpc.EdgeServiceBlockingStub stub = EdgeServiceGrpc.newBlockingStub(channel);
 
             String name = (args.length > 0) ? args[0] : "User";
-            HelloRequest req = HelloRequest.newBuilder().setName(name).build();
-            HelloReply res = stub.sayHello(req);
+            echoMessage req = echoMessage.newBuilder().setText(name).build();
+            echoMessage res = stub.echo(req);
 
-            System.out.println("✅ Server replied: " + res.getMessage());
+            System.out.println("✅ Server replied: " + res.getText());
         } finally {
             channel.shutdownNow();
         }

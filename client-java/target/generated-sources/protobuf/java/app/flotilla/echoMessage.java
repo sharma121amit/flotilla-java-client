@@ -5,74 +5,74 @@
 package app.flotilla;
 
 /**
- * Protobuf type {@code flotilla.HelloReply}
+ * Protobuf type {@code flotilla.echoMessage}
  */
-public final class HelloReply extends
+public final class echoMessage extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:flotilla.HelloReply)
-    HelloReplyOrBuilder {
+    // @@protoc_insertion_point(message_implements:flotilla.echoMessage)
+    echoMessageOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use HelloReply.newBuilder() to construct.
-  private HelloReply(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use echoMessage.newBuilder() to construct.
+  private echoMessage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private HelloReply() {
-    message_ = "";
+  private echoMessage() {
+    text_ = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new HelloReply();
+    return new echoMessage();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return app.flotilla.Flotilla.internal_static_flotilla_HelloReply_descriptor;
+    return app.flotilla.Flotilla.internal_static_flotilla_echoMessage_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return app.flotilla.Flotilla.internal_static_flotilla_HelloReply_fieldAccessorTable
+    return app.flotilla.Flotilla.internal_static_flotilla_echoMessage_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            app.flotilla.HelloReply.class, app.flotilla.HelloReply.Builder.class);
+            app.flotilla.echoMessage.class, app.flotilla.echoMessage.Builder.class);
   }
 
-  public static final int MESSAGE_FIELD_NUMBER = 1;
+  public static final int TEXT_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object message_ = "";
+  private volatile java.lang.Object text_ = "";
   /**
-   * <code>string message = 1;</code>
-   * @return The message.
+   * <code>string text = 1;</code>
+   * @return The text.
    */
   @java.lang.Override
-  public java.lang.String getMessage() {
-    java.lang.Object ref = message_;
+  public java.lang.String getText() {
+    java.lang.Object ref = text_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      message_ = s;
+      text_ = s;
       return s;
     }
   }
   /**
-   * <code>string message = 1;</code>
-   * @return The bytes for message.
+   * <code>string text = 1;</code>
+   * @return The bytes for text.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getMessageBytes() {
-    java.lang.Object ref = message_;
+      getTextBytes() {
+    java.lang.Object ref = text_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      message_ = b;
+      text_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -93,8 +93,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, message_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(text_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, text_);
     }
     getUnknownFields().writeTo(output);
   }
@@ -105,8 +105,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, message_);
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(text_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, text_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -118,13 +118,13 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof app.flotilla.HelloReply)) {
+    if (!(obj instanceof app.flotilla.echoMessage)) {
       return super.equals(obj);
     }
-    app.flotilla.HelloReply other = (app.flotilla.HelloReply) obj;
+    app.flotilla.echoMessage other = (app.flotilla.echoMessage) obj;
 
-    if (!getMessage()
-        .equals(other.getMessage())) return false;
+    if (!getText()
+        .equals(other.getText())) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -136,51 +136,51 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
-    hash = (53 * hash) + getMessage().hashCode();
+    hash = (37 * hash) + TEXT_FIELD_NUMBER;
+    hash = (53 * hash) + getText().hashCode();
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static app.flotilla.HelloReply parseFrom(byte[] data)
+  public static app.flotilla.echoMessage parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static app.flotilla.HelloReply parseFrom(java.io.InputStream input)
+  public static app.flotilla.echoMessage parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -188,26 +188,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static app.flotilla.HelloReply parseDelimitedFrom(java.io.InputStream input)
+  public static app.flotilla.echoMessage parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static app.flotilla.HelloReply parseDelimitedFrom(
+  public static app.flotilla.echoMessage parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static app.flotilla.HelloReply parseFrom(
+  public static app.flotilla.echoMessage parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -220,7 +220,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(app.flotilla.HelloReply prototype) {
+  public static Builder newBuilder(app.flotilla.echoMessage prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -236,26 +236,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code flotilla.HelloReply}
+   * Protobuf type {@code flotilla.echoMessage}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:flotilla.HelloReply)
-      app.flotilla.HelloReplyOrBuilder {
+      // @@protoc_insertion_point(builder_implements:flotilla.echoMessage)
+      app.flotilla.echoMessageOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return app.flotilla.Flotilla.internal_static_flotilla_HelloReply_descriptor;
+      return app.flotilla.Flotilla.internal_static_flotilla_echoMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return app.flotilla.Flotilla.internal_static_flotilla_HelloReply_fieldAccessorTable
+      return app.flotilla.Flotilla.internal_static_flotilla_echoMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              app.flotilla.HelloReply.class, app.flotilla.HelloReply.Builder.class);
+              app.flotilla.echoMessage.class, app.flotilla.echoMessage.Builder.class);
     }
 
-    // Construct using app.flotilla.HelloReply.newBuilder()
+    // Construct using app.flotilla.echoMessage.newBuilder()
     private Builder() {
 
     }
@@ -269,24 +269,24 @@ private static final long serialVersionUID = 0L;
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
-      message_ = "";
+      text_ = "";
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return app.flotilla.Flotilla.internal_static_flotilla_HelloReply_descriptor;
+      return app.flotilla.Flotilla.internal_static_flotilla_echoMessage_descriptor;
     }
 
     @java.lang.Override
-    public app.flotilla.HelloReply getDefaultInstanceForType() {
-      return app.flotilla.HelloReply.getDefaultInstance();
+    public app.flotilla.echoMessage getDefaultInstanceForType() {
+      return app.flotilla.echoMessage.getDefaultInstance();
     }
 
     @java.lang.Override
-    public app.flotilla.HelloReply build() {
-      app.flotilla.HelloReply result = buildPartial();
+    public app.flotilla.echoMessage build() {
+      app.flotilla.echoMessage result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -294,17 +294,17 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public app.flotilla.HelloReply buildPartial() {
-      app.flotilla.HelloReply result = new app.flotilla.HelloReply(this);
+    public app.flotilla.echoMessage buildPartial() {
+      app.flotilla.echoMessage result = new app.flotilla.echoMessage(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(app.flotilla.HelloReply result) {
+    private void buildPartial0(app.flotilla.echoMessage result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.message_ = message_;
+        result.text_ = text_;
       }
     }
 
@@ -342,18 +342,18 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof app.flotilla.HelloReply) {
-        return mergeFrom((app.flotilla.HelloReply)other);
+      if (other instanceof app.flotilla.echoMessage) {
+        return mergeFrom((app.flotilla.echoMessage)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(app.flotilla.HelloReply other) {
-      if (other == app.flotilla.HelloReply.getDefaultInstance()) return this;
-      if (!other.getMessage().isEmpty()) {
-        message_ = other.message_;
+    public Builder mergeFrom(app.flotilla.echoMessage other) {
+      if (other == app.flotilla.echoMessage.getDefaultInstance()) return this;
+      if (!other.getText().isEmpty()) {
+        text_ = other.text_;
         bitField0_ |= 0x00000001;
         onChanged();
       }
@@ -384,7 +384,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              message_ = input.readStringRequireUtf8();
+              text_ = input.readStringRequireUtf8();
               bitField0_ |= 0x00000001;
               break;
             } // case 10
@@ -405,73 +405,73 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object message_ = "";
+    private java.lang.Object text_ = "";
     /**
-     * <code>string message = 1;</code>
-     * @return The message.
+     * <code>string text = 1;</code>
+     * @return The text.
      */
-    public java.lang.String getMessage() {
-      java.lang.Object ref = message_;
+    public java.lang.String getText() {
+      java.lang.Object ref = text_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        message_ = s;
+        text_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string message = 1;</code>
-     * @return The bytes for message.
+     * <code>string text = 1;</code>
+     * @return The bytes for text.
      */
     public com.google.protobuf.ByteString
-        getMessageBytes() {
-      java.lang.Object ref = message_;
+        getTextBytes() {
+      java.lang.Object ref = text_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        message_ = b;
+        text_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string message = 1;</code>
-     * @param value The message to set.
+     * <code>string text = 1;</code>
+     * @param value The text to set.
      * @return This builder for chaining.
      */
-    public Builder setMessage(
+    public Builder setText(
         java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
-      message_ = value;
+      text_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>string message = 1;</code>
+     * <code>string text = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearMessage() {
-      message_ = getDefaultInstance().getMessage();
+    public Builder clearText() {
+      text_ = getDefaultInstance().getText();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>string message = 1;</code>
-     * @param value The bytes for message to set.
+     * <code>string text = 1;</code>
+     * @param value The bytes for text to set.
      * @return This builder for chaining.
      */
-    public Builder setMessageBytes(
+    public Builder setTextBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) { throw new NullPointerException(); }
       checkByteStringIsUtf8(value);
-      message_ = value;
+      text_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
@@ -489,23 +489,23 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:flotilla.HelloReply)
+    // @@protoc_insertion_point(builder_scope:flotilla.echoMessage)
   }
 
-  // @@protoc_insertion_point(class_scope:flotilla.HelloReply)
-  private static final app.flotilla.HelloReply DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:flotilla.echoMessage)
+  private static final app.flotilla.echoMessage DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new app.flotilla.HelloReply();
+    DEFAULT_INSTANCE = new app.flotilla.echoMessage();
   }
 
-  public static app.flotilla.HelloReply getDefaultInstance() {
+  public static app.flotilla.echoMessage getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<HelloReply>
-      PARSER = new com.google.protobuf.AbstractParser<HelloReply>() {
+  private static final com.google.protobuf.Parser<echoMessage>
+      PARSER = new com.google.protobuf.AbstractParser<echoMessage>() {
     @java.lang.Override
-    public HelloReply parsePartialFrom(
+    public echoMessage parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -524,17 +524,17 @@ private static final long serialVersionUID = 0L;
     }
   };
 
-  public static com.google.protobuf.Parser<HelloReply> parser() {
+  public static com.google.protobuf.Parser<echoMessage> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<HelloReply> getParserForType() {
+  public com.google.protobuf.Parser<echoMessage> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public app.flotilla.HelloReply getDefaultInstanceForType() {
+  public app.flotilla.echoMessage getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

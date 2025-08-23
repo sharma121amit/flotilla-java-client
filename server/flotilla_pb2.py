@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x66lotilla.proto\x12\x08\x66lotilla\"\x1c\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\"\x1d\n\nHelloReply\x12\x0f\n\x07message\x18\x01 \x01(\t2E\n\x07Greeter\x12:\n\x08SayHello\x12\x16.flotilla.HelloRequest\x1a\x14.flotilla.HelloReply\"\x00\x42\x10\n\x0c\x61pp.flotillaP\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x66lotilla.proto\x12\x08\x66lotilla\"\x1b\n\x0b\x65\x63hoMessage\x12\x0c\n\x04text\x18\x01 \x01(\t2E\n\x0b\x45\x64geService\x12\x36\n\x04\x45\x63ho\x12\x15.flotilla.echoMessage\x1a\x15.flotilla.echoMessage\"\x00\x42\x10\n\x0c\x61pp.flotillaP\x01\x62\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'flotilla_pb2', globals())
@@ -21,10 +21,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\014app.flotillaP\001'
-  _HELLOREQUEST._serialized_start=28
-  _HELLOREQUEST._serialized_end=56
-  _HELLOREPLY._serialized_start=58
-  _HELLOREPLY._serialized_end=87
-  _GREETER._serialized_start=89
-  _GREETER._serialized_end=158
+  _ECHOMESSAGE._serialized_start=28
+  _ECHOMESSAGE._serialized_end=55
+  _EDGESERVICE._serialized_start=57
+  _EDGESERVICE._serialized_end=126
 # @@protoc_insertion_point(module_scope)

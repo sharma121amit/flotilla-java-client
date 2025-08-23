@@ -16,15 +16,10 @@ public final class Flotilla {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_flotilla_HelloRequest_descriptor;
+    internal_static_flotilla_echoMessage_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_flotilla_HelloRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_flotilla_HelloReply_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_flotilla_HelloReply_fieldAccessorTable;
+      internal_static_flotilla_echoMessage_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -34,28 +29,21 @@ public final class Flotilla {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016flotilla.proto\022\010flotilla\"\034\n\014HelloReque" +
-      "st\022\014\n\004name\030\001 \001(\t\"\035\n\nHelloReply\022\017\n\007messag" +
-      "e\030\001 \001(\t2E\n\007Greeter\022:\n\010SayHello\022\026.flotill" +
-      "a.HelloRequest\032\024.flotilla.HelloReply\"\000B\020" +
-      "\n\014app.flotillaP\001b\006proto3"
+      "\n\016flotilla.proto\022\010flotilla\"\033\n\013echoMessag" +
+      "e\022\014\n\004text\030\001 \001(\t2E\n\013EdgeService\0226\n\004Echo\022\025" +
+      ".flotilla.echoMessage\032\025.flotilla.echoMes" +
+      "sage\"\000B\020\n\014app.flotillaP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_flotilla_HelloRequest_descriptor =
+    internal_static_flotilla_echoMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_flotilla_HelloRequest_fieldAccessorTable = new
+    internal_static_flotilla_echoMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_flotilla_HelloRequest_descriptor,
-        new java.lang.String[] { "Name", });
-    internal_static_flotilla_HelloReply_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_flotilla_HelloReply_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_flotilla_HelloReply_descriptor,
-        new java.lang.String[] { "Message", });
+        internal_static_flotilla_echoMessage_descriptor,
+        new java.lang.String[] { "Text", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
